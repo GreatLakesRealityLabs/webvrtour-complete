@@ -1,0 +1,45 @@
+<!doctype html>
+<!--
+/**
+ * @author: Sokwhan Huh
+ * @date: January 22nd, 2018
+ * 
+ * Uses the following dependencies:
+ * 
+ * webgl-utils: https://github.com/toji/webgl-utils/tree/master/src
+ * gl-matrix: http://glmatrix.net/
+ * 
+ * Original Source referenced from https://github.com/toji/webvr.info
+ * 
+ * Use of this source code is governed by a BSD-style license that can be found in the LICENSE file.
+ */
+-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>VR Tour Demo - KLA Office</title>
+    <style>
+      #webgl-canvas {
+        box-sizing: border-box;
+        height: 100%;
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+    </style>
+    <script src="./lib/wglu-url.js"></script>
+    <script src="./lib/gl-matrix-min.js"></script>
+    <script src="./lib/wglu-program.js"></script>
+    <script src="./lib/wglu-stats.js"></script>
+  </head>
+  <body>
+    <canvas id="webgl-canvas"></canvas>
+    <script src="./src/vr-samples-util.js"></script>
+    <script src="./src/panorama.js"></script>
+    <script src="./src/vr.js"></script>
+  </body>
+</html>
